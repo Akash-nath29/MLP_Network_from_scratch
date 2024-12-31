@@ -3,6 +3,7 @@ from dataloader.dataloader import load_data
 from functions.functions import one_hot_encoding
 import json
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Test Purpose
 def plot_predictions(X_test, y_test, y_pred, num_samples=10):
