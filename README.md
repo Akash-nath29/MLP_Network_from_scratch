@@ -5,7 +5,7 @@ This project implements a handwritten digit classifier using a Multi-Layer Perce
 ## Project Structure
 
 ```
-handwritten-digit-classifier/
+MLP_Network_from_scratch/
 │
 ├── dataloader/
 │   └── dataloader.py
@@ -25,8 +25,8 @@ handwritten-digit-classifier/
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/handwritten-digit-classifier.git
-    cd handwritten-digit-classifier
+    git clone https://github.com/Akash-nath29/MLP_Network_from_scratch.git
+    cd MLP_Network_from_scratch
     ```
 
 2. Install the required dependencies:
