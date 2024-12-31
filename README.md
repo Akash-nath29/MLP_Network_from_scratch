@@ -1,6 +1,7 @@
 # MLP Network from Scratch
 
 This project implements a handwritten digit classifier using a Multi-Layer Perceptron (MLP) neural network. The model is trained on the MNIST dataset and can predict digits from 0 to 9.
+![MLP drawio](https://github.com/user-attachments/assets/971f477c-3b84-4e1c-abe0-43e95455bac2)
 
 ## Project Structure
 
