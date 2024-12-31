@@ -87,4 +87,4 @@ The `plot_predictions` function in `train.py` can be used to visualize the model
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT LICENSE](LICENSE).
