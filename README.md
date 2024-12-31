@@ -18,6 +18,9 @@ MLP_Network_from_scratch/
 │   ├── mnist_train.csv
 │   └── mnist_test.csv
 ├── train.py
+├── requirements.txt
+├── README.md
+|── test.py
 ├── model.ipynb
 └── .gitignore
 ```
@@ -46,6 +49,14 @@ To train the model, run the `train.py` script:
 python train.py
 ```
 This will train the MLP neural network on the MNIST dataset and save the trained model to `model.json`.
+
+### Testing the Model
+
+To test the model, run the `test.py` script:
+```sh
+uvicorn test:app --reload
+```
+This will start a FastAPI server that uses the model to predict handwritten digits.
 
 ### Evaluating the Model
 
