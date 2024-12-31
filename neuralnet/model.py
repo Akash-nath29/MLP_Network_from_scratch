@@ -10,14 +10,15 @@ class MLPNetwork:
         self.b2 = np.zeros((1, output_size))
         self.learning_rate = learning_rate
         
-    def __dict__(self):
+    def model_to_json(self):
         return {
-            'W1': self.W1,
-            'b1': self.b1,
-            'W2': self.W2,
-            'b2': self.b2,
+            'W1': self.W1.tolist(),
+            'b1': self.b1.tolist(),
+            'W2': self.W2.tolist(),
+            'b2': self.b2.tolist(),
             'learning_rate': self.learning_rate
         }
+
         
     def forward_pass(self, X):
         self.z1 = np.dot(X, self.W1) + self.b1

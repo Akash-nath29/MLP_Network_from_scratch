@@ -1,3 +1,4 @@
 *csv
-*json
+# *json
 __pycache__/
+test/

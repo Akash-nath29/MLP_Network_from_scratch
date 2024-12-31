@@ -44,4 +44,4 @@ y_test_pred = nn.predict(X_test)
 plot_predictions(X_test, y_test, y_test_pred, num_samples=10)
 
 with open('model.json', 'w') as f:
-    json.dump(nn.__dict__, f)
+    json.dump(nn.model_to_json(), f)
