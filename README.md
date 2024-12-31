@@ -1,4 +1,4 @@
-# Handwritten Digit Classifier
+# MLP Network from Scratch
 
 This project implements a handwritten digit classifier using a Multi-Layer Perceptron (MLP) neural network. The model is trained on the MNIST dataset and can predict digits from 0 to 9.
 
