@@ -4,11 +4,14 @@ from functions.functions import sigmoid, sigmoid_derivative, softmax, cross_entr
 
 class MLPNetwork:
     def __init__(self, input_size, hidden_size, output_size, learning_rate=0.1):
-        self.W1 = np.random.randn(input_size, hidden_size) * 0.01
-        self.b1 = np.zeros((1, hidden_size))
-        self.W2 = np.random.randn(hidden_size, output_size) * 0.01
-        self.b2 = np.zeros((1, output_size))
         self.learning_rate = learning_rate
+        self.input_size = input_size
+        self.hidden_size = hidden_size
+        self.output_size = output_size
+        self.W1 = np.random.randn(self.input_size, self.hidden_size) * 0.01
+        self.b1 = np.zeros((1, self.hidden_size))
+        self.W2 = np.random.randn(self.hidden_size, self.output_size) * 0.01
+        self.b2 = np.zeros((1, self.output_size))
         
     def model_to_json(self):
         return {
@@ -16,7 +19,10 @@ class MLPNetwork:
             'b1': self.b1.tolist(),
             'W2': self.W2.tolist(),
             'b2': self.b2.tolist(),
-            'learning_rate': self.learning_rate
+            'learning_rate': self.learning_rate,
+            'input_size': self.input_size,
+            'hidden_size': self.hidden_size,
+            'output_size': self.output_size
         }
 
         

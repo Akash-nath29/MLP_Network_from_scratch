@@ -8,11 +8,11 @@ from neuralnet.model import MLPNetwork
 app = FastAPI()
 
 # Load the pre-trained model
-def load_model(model_path: str, input_size: int, hidden_size: int, output_size: int):
+def load_model(model_path: str):
     with open(model_path, 'r') as f:
         model_data = json.load(f)
     
-    nn = MLPNetwork(input_size, hidden_size, output_size)
+    nn = MLPNetwork(model_data['input_size'], model_data['hidden_size'], model_data['output_size'])
     nn.W1 = np.array(model_data['W1'])
     nn.b1 = np.array(model_data['b1'])
     nn.W2 = np.array(model_data['W2'])
@@ -20,7 +20,7 @@ def load_model(model_path: str, input_size: int, hidden_size: int, output_size: 
     
     return nn
 
-model = load_model('model.json', input_size=784, hidden_size=64, output_size=10)
+model = load_model('model.json')
 
 def preprocess_image(image: Image.Image):
     image = image.convert('L')
