@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from functions.functions import sigmoid, sigmoid_derivative, softmax, cross_entropy_loss
+from functions import sigmoid, sigmoid_derivative, softmax, cross_entropy_loss
 
 class MLPNetwork:
     def __init__(self, input_size, hidden_size, output_size, learning_rate=0.1):

@@ -1,6 +1,6 @@
-from neuralnet.model import MLPNetwork
-from dataloader.dataloader import load_data
-from functions.functions import one_hot_encoding
+from neuralnet import MLPNetwork
+from dataloader import load_data
+from functions import one_hot_encoding
 import json
 import matplotlib.pyplot as plt
 import numpy as np

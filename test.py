@@ -3,7 +3,7 @@ from fastapi.responses import JSONResponse
 import numpy as np
 from PIL import Image
 import json
-from neuralnet.model import MLPNetwork
+from neuralnet import MLPNetwork
 
 app = FastAPI()
 
